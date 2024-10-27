@@ -1,0 +1,10 @@
+{% extends 'task/base.html' %}
+
+{% block title %}Subir Imagen - Task App{% endblock %}
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Subir Imagen</button>
+    </form>
+{% endblock %}

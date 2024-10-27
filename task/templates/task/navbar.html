@@ -1,31 +1,37 @@
+<!-- templates/task/navbar.html -->
+<style>
+    nav {
+        background-color: #333;
+        color: white;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        color: yellow;
+    }
+</style>
 <nav>
     <ul>
         <li><a href="{% url 'homew' %}">Home</a></li>
         <li><a href="{% url 'aboutw' %}">About</a></li>
         <li><a href="{% url 'contacty' %}">Contact</a></li>
+        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+        <li><a href="{% url 'upload_photo' %}">Upload Photos</a></li> <!-- Enlace agregado -->
     </ul>
-    <style>
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            float: left;
-        }
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #111;
-        }
-    </style>
 </nav>
