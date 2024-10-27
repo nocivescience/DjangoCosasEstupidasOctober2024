@@ -8,3 +8,12 @@ class Photo(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Photo2(models.Model):
+    title = models.CharField(max_length=100)  # Un título opcional para la imagen
+    image = models.ImageField(upload_to='photos/')  # Campo para la imagen
+    uploaded_at = models.DateTimeField(auto_now_add=True)  # Fecha de subida
+
+    def __str__(self):
+        return self.title # Devuelve el título de la imagen
